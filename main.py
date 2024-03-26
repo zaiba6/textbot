@@ -3,9 +3,7 @@ import random
 from nltk.corpus import wordnet
 from nltk.corpus import words
 
-# Your Twilio Account SID and Auth Token
-account_sid = 'AC6ec4d387e0aca3a84093f25984ae5152'
-auth_token = 'c8d7b541cd50668f25d3fa3620da7400'
+
 client = Client(account_sid, auth_token)
 
 #number
