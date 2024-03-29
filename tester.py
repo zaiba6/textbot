@@ -36,3 +36,17 @@ def get_random_word_definition():
 
 # Example usage
 print(get_random_word_definition())
+
+
+
+#code to generate random words and their definitions
+word_list = words.words()
+
+# def get_random_word_definition():
+#       while True:
+#         random_word = random.choice(word_list)
+#         synsets = wordnet.synsets(random_word)
+#         if synsets:
+#           term = random_word
+#           meaning = synsets[0].definition() 
+#           return f"{term}: {meaning}"
