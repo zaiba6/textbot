@@ -7,8 +7,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 
 # Your Twilio Account SID and Auth Token
-account_sid = 'AC6ec4d387e0aca3a84093f25984ae5152'
-auth_token = 'c8d7b541cd50668f25d3fa3620da7400'
+
 client = Client(account_sid, auth_token)
 
 # Number
@@ -44,7 +43,7 @@ receiving_num = column_b_values
 r = RandomWords()
 dictionary = PyDictionary()
 
-word = "ephemeral"
+word = "Ephemeral"
 phenotic = "(e·phem·er·al)"
 
 Sentence = "That shordy is straight ephemeral, here today, ghostin' tomorrow." 
