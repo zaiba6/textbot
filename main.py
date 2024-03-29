@@ -7,7 +7,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 
 # Your Twilio Account SID and Auth Token
-
+account_sid = ''
+auth_token = ''
 client = Client(account_sid, auth_token)
 
 # Number
