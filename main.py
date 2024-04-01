@@ -7,8 +7,8 @@ from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
 
 # Your Twilio Account SID and Auth Token
-account_sid = ''
-auth_token = ''
+account_sid = 'AC6ec4d387e0aca3a84093f25984ae5152'
+auth_token = 'c8d7b541cd50668f25d3fa3620da7400'
 client = Client(account_sid, auth_token)
 
 # Number
@@ -44,10 +44,10 @@ receiving_num = column_b_values
 r = RandomWords()
 dictionary = PyDictionary()
 
-word = "Ephemeral"
-phenotic = "(e·phem·er·al)"
+word = "Syzygy"
+phenotic = "(siz·uh·jee)"
 
-Sentence = "That shordy is straight ephemeral, here today, ghostin' tomorrow." 
+Sentence = "The Bosnian boss man's orders had us all puzzled until we realized his grand plan was a syzygy of chaos and confusion in the office" 
 
 # Get the meanings of the word from PyDictionary
 definition = dictionary.meaning(word)
@@ -67,13 +67,14 @@ if definition:
             pos = 'Adjective'
         elif pos == 'r':
             pos = 'Adverb'
-        meaning = f"{word} {phenotic}\n\n{pos}: {', '.join(definition.get(pos, ['Definition not found']))}"
+        meaning = f"{word} {phenotic}\n\n{pos}: {','.join(definition.get(pos, ['Definition not found']))}"
         #print(meaning)
 else:
     meaning = f"{word}: No word for today, sorry :')"
 
+definnition = "Noun: Conjunction or opposition, especially of the moon with the sun"
 
-sendout = f"Word of the day!\n\n{meaning}\n\n{Sentence}"
+sendout = f"Word of the day!\n\n{word} {phenotic}\n\n{definnition}\n\n{Sentence}"
 print (sendout)
 
 
