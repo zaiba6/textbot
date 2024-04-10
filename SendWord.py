@@ -3,7 +3,7 @@ from nltk.corpus import wordnet
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 import pandas as pd
-from Getword import sendout
+from WordFromExcel import sendout
 
 # Your Twilio Account SID and Auth Token
 account_sid = ''
