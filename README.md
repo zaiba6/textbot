@@ -15,3 +15,5 @@ Phone numbers are recorded via Google form and stored in a google sheet, which i
 The final text looks like this:
 
 ![alt text](PhoneText.jpg)
+<img src= PhoneText.jpg width=50% height=50%>
+
